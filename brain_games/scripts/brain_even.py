@@ -10,5 +10,5 @@ def main():
     game(init_message, question_even)
 
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     main()
