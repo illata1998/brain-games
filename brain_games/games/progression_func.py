@@ -18,6 +18,6 @@ def progression_game(attempt_count):
     missing_item = progression[missing_item_index]
     progression[missing_item_index] = '..'
     if attempt_count == 0:
-        print('What number is missing in this progression?')
+        print('What number is missing in the progression?')
     ask_question(' '.join(map(str, progression)))
     return str(missing_item)
