@@ -10,6 +10,15 @@ brain-even:
 brain-calc:
 	poetry run brain-calc
 
+brain-prime:
+	poetry run brain-prime
+
+brain-gcd:
+	poetry run brain-gcd
+
+brain-progression:
+	poetry run brain-progression
+
 build:
 	poetry build
 
