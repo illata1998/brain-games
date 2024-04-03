@@ -15,6 +15,6 @@ def prime_game(attempt_count):
     FINISH = 100
     num = randint(START, FINISH)
     if attempt_count == 0:
-        print('Answer "yes" if given number is prime, otherwise answer "no".')
+        print('Answer "yes" if given number is prime. Otherwise answer "no".')
     ask_question(str(num))
     return 'yes' if is_prime(num) else 'no'
