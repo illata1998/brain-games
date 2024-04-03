@@ -13,7 +13,8 @@ def game_engine(question):
             print('Correct!')
             attempt_count += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was "
+                  f"'{correct_answer}'.")
             print(f"Let's try again, {name}!")
             break
     if attempt_count == MAX_ATTEMPT_COUNT:
