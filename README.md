@@ -1,7 +1,19 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/illata1998/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/illata1998/python-project-49/actions)
 
+### Code Climate Status
 <a href="https://codeclimate.com/github/illata1998/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/04dd65ec4f611f194ba3/maintainability" /></a>
+
+### Описание
+Brain Games — набор из пяти консольных игр для проверки простых математических навыков игрока. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. 
+
+Игры:
+- калькулятор: арифметические выражения, которые необходимо вычислить;
+- прогрессия. Поиск пропущенных чисел в последовательности чисел;
+- определение четного числа;
+- определение наибольшего общего делителя;
+- определение простого числа.
+
 
 <a href="https://asciinema.org/a/5sJ12QVwp4rT3ARyURZoqg8pU" target="_blank"><img src="https://asciinema.org/a/5sJ12QVwp4rT3ARyURZoqg8pU.svg" /></a>
 
