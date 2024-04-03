@@ -1,13 +1,12 @@
 #!/user/bin/env python3
 
 
-from ..even_func import question_even
-from ..game import game
+from brain_games.games.even_func import even_game
+from brain_games.games.game_func import game_engine
 
 
 def main():
-    init_message = 'Answer "yes" if the number is even, otherwise answer "no".'
-    game(init_message, question_even)
+    game_engine(even_game)
 
 
 if __name__ == '__main__':

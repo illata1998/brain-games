@@ -1,10 +1,12 @@
-from ..calc_func import question_calc
-from ..game import game
+#!/user/bin/env python3
+
+
+from brain_games.games.calc_func import calc_game
+from brain_games.games.game_func import game_engine
 
 
 def main():
-    init_message = 'What is the result of the expression?'
-    game(init_message, question_calc)
+    game_engine(calc_game)
 
 
 if __name__ == '__main__':
