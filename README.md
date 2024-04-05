@@ -15,7 +15,6 @@
 - определение простого числа.
 
 ### Установка
-**Linux**
 <code>python3 -m pip install --user git+https://github.com/illata1998/python-project-49.git</code>
 
 ### Запуск
