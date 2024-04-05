@@ -15,7 +15,7 @@
 - определение простого числа.
 
 ### Установка
-<code>python3 -m pip install --user git+https://github.com/illata1998/python-project-49.git</code>
+Для установки на Linux используйте команду <code>python3 -m pip install --user git+https://github.com/illata1998/python-project-49.git</code>
 
 ### Запуск
 Для запуска игр после установки используйте следующие команды:
