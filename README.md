@@ -19,7 +19,7 @@
 
 ### Запуск
 Для запуска игр после установки используйте следующие команды:
-- калькулятор - <code>brain-culc</code>
+- калькулятор - <code>brain-calc</code>
 - прогрессия - <code>brain-progression</code>
 - определение четного числа - <code>brain-even</code>
 - определение наибольшего общего делителя - <code>brain-gcd</code>
