@@ -27,6 +27,7 @@
 - определение простого числа - <code>brain-prime</code>
 
 **Примеры запуска игр**
+
 <a href="https://asciinema.org/a/DMUoCbSZKTTGccsm2B970LRzJ" target="_blank"><img src="https://asciinema.org/a/DMUoCbSZKTTGccsm2B970LRzJ.svg" /></a>
 <a href="https://asciinema.org/a/McF94c3TbIZodrsmhsiEW8OLB" target="_blank"><img src="https://asciinema.org/a/McF94c3TbIZodrsmhsiEW8OLB.svg" /></a>
 <a href="https://asciinema.org/a/m6OU4XnUVHc0ReyZQtleYur0h" target="_blank"><img src="https://asciinema.org/a/m6OU4XnUVHc0ReyZQtleYur0h.svg" /></a>
