@@ -1,4 +1,3 @@
-from random import randint
 from brain_games.games.yes_or_no_func import yes_or_no_game
 
 
