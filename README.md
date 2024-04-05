@@ -18,12 +18,12 @@ Brain Games — набор из пяти консольных игр для пр
 блабла
 
 ### Запуск
-Для запуска игр используйте следующие команды:
-- калькулятор - brain-culc
-- прогрессия - brain-progression
-- определение четного числа - brain-even
-- определение наибольшего общего делителя - brain-gcd
-- определение простого числа - brain-prime
+Для запуска игр после установки используйте следующие команды:
+- калькулятор - <code>brain-culc</code>
+- прогрессия - <code>brain-progression</code>
+- определение четного числа - <code>brain-even</code>
+- определение наибольшего общего делителя - <code>brain-gcd</code>
+- определение простого числа - <code>brain-prime</code>
 
 ### Примеры запуска игр
 <a href="https://asciinema.org/a/5sJ12QVwp4rT3ARyURZoqg8pU" target="_blank"><img src="https://asciinema.org/a/5sJ12QVwp4rT3ARyURZoqg8pU.svg" /></a>
