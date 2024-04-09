@@ -23,5 +23,5 @@ def calc_answer():
     )
 
 
-def calc_game(INIT_MESSAGE_CALC):
+def calc_game():
     game_engine(calc_answer, INIT_MESSAGE_CALC)
