@@ -1,14 +1,16 @@
 from random import randint
 
 
-def progression_game():
+INIT_MESSAGE_PROGRESSION = 'What number is missing in the progression?'
+
+
+def progression_answer():
     START = 1
     FINISH = 100
     MIN_LENGTH = 5
     MAX_LENGTH = 10
     MIN_STEP = 1
-    MAX_STEP = 10
-    INIT_MESSAGE = 'What number is missing in the progression?'
+    MAX_STEP = 10 
     progression = [randint(START, FINISH)]
     progression_length = randint(MIN_LENGTH, MAX_LENGTH)
     step = randint(MIN_STEP, MAX_STEP)
@@ -22,3 +24,7 @@ def progression_game():
         ' '.join(map(str, progression)),
         str(missing_item)
     )
+
+
+def progression_game():
+    game_engine(progression_answer, INIT_MESSAGE_PROGRESSION)
