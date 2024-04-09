@@ -7,7 +7,6 @@ INIT_MESSAGE_CALC = 'What is the result of the expression?'
 def calc_answer():
     START = 1
     FINISH = 10
-    
     num1, num2 = randint(START, FINISH), randint(START, FINISH)
     signs = ['+', '-', '*']
     sign_index = randint(0, len(signs) - 1)
