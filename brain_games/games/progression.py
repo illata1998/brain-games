@@ -11,7 +11,7 @@ def progression_answer():
     MIN_LENGTH = 5
     MAX_LENGTH = 10
     MIN_STEP = 1
-    MAX_STEP = 10 
+    MAX_STEP = 10
     progression = [randint(START, FINISH)]
     progression_length = randint(MIN_LENGTH, MAX_LENGTH)
     step = randint(MIN_STEP, MAX_STEP)
