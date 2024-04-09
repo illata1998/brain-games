@@ -23,5 +23,5 @@ def gcd_answer():
         str(correct_answer)
     )
 
-def gcd_game(INIT_MESSAGE_CALC):
-    game_engine(calc_answer, INIT_MESSAGE_GCD)
+def gcd_game():
+    game_engine(gcd_answer, INIT_MESSAGE_GCD)
