@@ -16,4 +16,8 @@ def gcd_game():
     INIT_MESSAGE = 'Find the greatest common divisor of given numbers.'
     num1, num2 = randint(START, FINISH), randint(START, FINISH)
     correct_answer = find_gcd(num1, num2)
-    return INIT_MESSAGE, f'{num1} {num2}', str(correct_answer)
+    return (
+        INIT_MESSAGE,
+        f'{num1} {num2}',
+        str(correct_answer)
+    )
