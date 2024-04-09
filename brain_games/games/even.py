@@ -9,7 +9,7 @@ def even_answer():
     START = 1
     FINISH = 100
     question_num = randint(START, FINISH)
-    correct_answer = 'yes' if question_num %2 == 0 else 'no'
+    correct_answer = 'yes' if question_num % 2 == 0 else 'no'
     return question_num, correct_answer
 
 
