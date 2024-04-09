@@ -7,10 +7,10 @@ def game_engine(game):
     attempt_count = 0
     name = welcome_user()
     while attempt_count < MAX_ATTEMPT_COUNT:
-        INIT_MESSAGE, question_num, correct_answer = game()
+        INIT_MESSAGE, question_str, correct_answer = game()
         if attempt_count == 0:
             print(INIT_MESSAGE)
-        print('Question: ' + question_num)
+        print(f'Question: {question_str}')
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             print('Correct!')
