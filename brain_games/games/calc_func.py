@@ -15,4 +15,8 @@ def calc_game():
             correct_answer = num1 - num2
         case 2:
             correct_answer = num1 * num2
-    return INIT_MESSAGE, f'{num1} {signs[sign_index]} {num2}', str(correct_answer)
+    return (
+        INIT_MESSAGE,
+        f'{num1} {signs[sign_index]} {num2}',
+        str(correct_answer)
+    )
