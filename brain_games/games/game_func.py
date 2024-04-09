@@ -1,5 +1,4 @@
 import prompt
-from brain_games.games.welcome_func import welcome_user
 
 
 def game_engine(game, init_message):
