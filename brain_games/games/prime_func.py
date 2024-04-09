@@ -1,4 +1,4 @@
-from brain_games.games.yes_or_no_func import yes_or_no_game
+from random import randint
 
 
 def is_prime(num):
@@ -9,7 +9,10 @@ def is_prime(num):
     return all(num % i != 0 for i in range(3, int(num ** 0.5) + 1, 2))
 
 
-def prime_game(attempt_count):
-    if attempt_count == 0:
-        print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    return yes_or_no_game(is_prime)
+def prime_game():
+    START = 1
+    FINISH = 100
+    INIT_MESSAGE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    question_num = randint(START, FINISH)
+    correct_answer = 'yes' if is_prime(question_num) else 'no'
+    return INIT_MESSAGE, str(question_num), str(correct_answer)
