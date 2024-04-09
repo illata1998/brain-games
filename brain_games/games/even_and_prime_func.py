@@ -18,15 +18,25 @@ def yes_or_no_game(is_func):
     FINISH = 100
     question_num = randint(START, FINISH)
     correct_answer = 'yes' if is_func(question_num) else 'no'
-    return str(question_num), str(correct_answer)
+    return question_num, correct_answer
 
 
 def even_game():
     INIT_MESSAGE = 'Answer "yes" if the number is even, otherwise answer "no".'
-    return INIT_MESSAGE, yes_or_no_game(is_even)
+    question_num, correct_answer = yes_or_no_game(is_even)
+    return (
+        INIT_MESSAGE,
+        str(question_num),
+        str(correct_answer)
+    )
 
 
 def prime_game():
     INIT_MESSAGE = 'Answer "yes" if given number is prime. '\
         'Otherwise answer "no".'
-    return INIT_MESSAGE, yes_or_no_game(is_prime)
+    question_num, correct_answer = yes_or_no_game(is_even)
+    return (
+        INIT_MESSAGE,
+        str(question_num),
+        str(correct_answer)
+    )
