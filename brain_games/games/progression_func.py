@@ -17,4 +17,7 @@ def progression_game():
     missing_item_index = randint(0, progression_length - 1)
     missing_item = progression[missing_item_index]
     progression[missing_item_index] = '..'
-    return INIT_MESSAGE, ' '.join(map(str, progression)), str(missing_item)
+    return (INIT_MESSAGE, 
+            ' '.join(map(str, progression)),
+            str(missing_item)
+    )
