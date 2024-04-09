@@ -2,10 +2,12 @@ import prompt
 from brain_games.games.welcome_func import welcome_user
 
 
-def game_engine(game):
+def game_engine(game, init_message):
     MAX_ATTEMPT_COUNT = 3
     attempt_count = 0
-    name = welcome_user()
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!\n{init_message}')
     while attempt_count < MAX_ATTEMPT_COUNT:
         question_str, correct_answer = game()
         print(f'Question: {question_str}')
