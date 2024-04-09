@@ -19,10 +19,8 @@ def gcd_answer():
     FINISH = 100
     num1, num2 = randint(START, FINISH), randint(START, FINISH)
     correct_answer = find_gcd(num1, num2)
-    return (
-        f'{num1} {num2}',
-        str(correct_answer)
-    )
+    return f'{num1} {num2}', str(correct_answer)
+
 
 def gcd_game():
     game_engine(gcd_answer, INIT_MESSAGE_GCD)
