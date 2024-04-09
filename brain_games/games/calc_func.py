@@ -1,4 +1,5 @@
 from random import randint
+from brain_games.games.engine import game_engine
 
 
 INIT_MESSAGE_CALC = 'What is the result of the expression?'
