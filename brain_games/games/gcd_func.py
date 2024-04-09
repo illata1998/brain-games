@@ -1,6 +1,9 @@
 from random import randint
 
 
+INIT_MESSAGE_GCD = 'Find the greatest common divisor of given numbers.'
+
+
 def find_gcd(num1, num2):
     while num1 != 0 and num2 != 0:
         if num1 > num2:
@@ -10,14 +13,15 @@ def find_gcd(num1, num2):
     return num1 + num2
 
 
-def gcd_game():
+def gcd_answer():
     START = 1
     FINISH = 100
-    INIT_MESSAGE = 'Find the greatest common divisor of given numbers.'
     num1, num2 = randint(START, FINISH), randint(START, FINISH)
     correct_answer = find_gcd(num1, num2)
     return (
-        INIT_MESSAGE,
         f'{num1} {num2}',
         str(correct_answer)
     )
+
+def gcd_game(INIT_MESSAGE_CALC):
+    game_engine(calc_answer, INIT_MESSAGE_GCD)
