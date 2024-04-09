@@ -34,7 +34,7 @@ def even_game():
 def prime_game():
     INIT_MESSAGE = 'Answer "yes" if given number is prime. '\
         'Otherwise answer "no".'
-    question_num, correct_answer = yes_or_no_game(is_even)
+    question_num, correct_answer = yes_or_no_game(is_prime)
     return (
         INIT_MESSAGE,
         str(question_num),
