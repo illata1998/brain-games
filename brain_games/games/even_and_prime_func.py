@@ -1,4 +1,8 @@
 from random import randint
+from brain_games.games.engine import game_engine
+
+
+INIT_MESSAGE_PRIME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
@@ -9,34 +13,13 @@ def is_prime(num):
     return all(num % i != 0 for i in range(3, int(num ** 0.5) + 1, 2))
 
 
-def is_even(num):
-    return num % 2 == 0
-
-
-def yes_or_no_game(is_func):
+def prime_answer():
     START = 1
     FINISH = 100
     question_num = randint(START, FINISH)
-    correct_answer = 'yes' if is_func(question_num) else 'no'
+    correct_answer = 'yes' if is_prime(question_num) else 'no'
     return question_num, correct_answer
 
 
-def even_game():
-    INIT_MESSAGE = 'Answer "yes" if the number is even, otherwise answer "no".'
-    question_num, correct_answer = yes_or_no_game(is_even)
-    return (
-        INIT_MESSAGE,
-        str(question_num),
-        str(correct_answer)
-    )
-
-
 def prime_game():
-    INIT_MESSAGE = 'Answer "yes" if given number is prime. '\
-        'Otherwise answer "no".'
-    question_num, correct_answer = yes_or_no_game(is_prime)
-    return (
-        INIT_MESSAGE,
-        str(question_num),
-        str(correct_answer)
-    )
+    game_engine(prime_answer, INIT_MESSAGE_PRIME)
