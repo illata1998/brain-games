@@ -6,6 +6,7 @@ MIN_NUMBER = 1
 MAX_NUMBER = 100
 SIGNS = ['+', '-', '*']
 
+
 def generate_round():
     number1 = randint(MIN_NUMBER, MAX_NUMBER)
     number2 = randint(MIN_NUMBER, MAX_NUMBER)
@@ -13,9 +14,9 @@ def generate_round():
     question = f'{number1} {sign} {number2}'
     match sign:
         case '+':
-            correct_answer = str(num1 + num2)
+            correct_answer = str(number1 + number2)
         case '-':
-            correct_answer = str(num1 - num2)
+            correct_answer = str(number1 - number2)
         case '*':
-            correct_answer = str(num1 * num2)
+            correct_answer = str(number1 * number2)
     return question, correct_answer

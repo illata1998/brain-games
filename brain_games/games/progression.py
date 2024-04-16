@@ -10,8 +10,8 @@ MIN_LENGTH = 5
 MAX_LENGTH = 10
 
 
-def generate_progression(first_element, step, length):
-    progression = [first_element]
+def generate_progression(first, step, length):
+    progression = [first]
     for i in range(length - 1):
         progression.append(progression[i] + step)
     return progression
@@ -28,6 +28,6 @@ def generate_round():
     step = randint(MIN_STEP, MAX_STEP)
     length = randint(MIN_LENGTH, MAX_LENGTH)
     removed_item_index = randint(0, length - 1)
-    progression = generate_progression(first_element, step, length)
-    question, correct_answer = remove_item(progression,removed_item_index)
+    progression = generate_progression(first, step, length)
+    question, correct_answer = remove_item(progression, removed_item_index)
     return question, correct_answer
