@@ -3,15 +3,14 @@ from brain_games.games.engine import game_engine
 
 
 INIT_MESSAGE_EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
-def even_answer():
-    START = 1
-    FINISH = 100
-    question_num = randint(START, FINISH)
-    correct_answer = 'yes' if question_num % 2 == 0 else 'no'
-    return question_num, correct_answer
+number = randint(MIN_NUMBER, MAX_NUMBER)
 
 
-def even_game():
-    game_engine(even_answer, INIT_MESSAGE_EVEN)
+def even_game(number):
+    question = str(number)
+    correct_answer = 'yes' if number % 2 == 0 else 'no'
+    return question, correct_answer
