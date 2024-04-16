@@ -1,26 +1,25 @@
 from random import randint
-from brain_games.games.engine import game_engine
 
 
 INIT_MESSAGE_GCD = 'Find the greatest common divisor of given numbers.'
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
-def find_gcd(num1, num2):
-    while num1 != 0 and num2 != 0:
-        if num1 > num2:
-            num1 = num1 % num2
+number1 = randint(MIN_NUMBER, MAX_NUMBER)
+number2 = randint(MIN_NUMBER, MAX_NUMBER)
+
+
+def find_gcd(a, b):
+    while a != 0 and b != 0:
+        if a > b:
+           a = a % b
         else:
-            num2 = num2 % num1
-    return num1 + num2
+            b = b % a
+    return a + b
 
 
-def gcd_answer():
-    START = 1
-    FINISH = 100
-    num1, num2 = randint(START, FINISH), randint(START, FINISH)
-    correct_answer = find_gcd(num1, num2)
-    return f'{num1} {num2}', str(correct_answer)
-
-
-def gcd_game():
-    game_engine(gcd_answer, INIT_MESSAGE_GCD)
+def gcd_game(number1, number2):
+    question = f'{number1} {number2}'
+    correct_answer = str(find_gcd(number1, number2))
+    return question, correct_answer
