@@ -1,25 +1,21 @@
-from random import randint
-from brain_games.games.engine import game_engine
+from random import randint, choice
 
 
-INIT_MESSAGE_CALC = 'What is the result of the expression?'
+INIT_MESSAGE = 'What is the result of the expression?'
+MIN_NUMBER = 1
+MAX_NUMBER = 100
+SIGNS = ['+', '-', '*']
 
-
-def calc_answer():
-    START = 1
-    FINISH = 10
-    num1, num2 = randint(START, FINISH), randint(START, FINISH)
-    signs = ['+', '-', '*']
-    sign_index = randint(0, len(signs) - 1)
-    match sign_index:
-        case 0:
-            correct_answer = num1 + num2
-        case 1:
-            correct_answer = num1 - num2
-        case 2:
-            correct_answer = num1 * num2
-    return f'{num1} {signs[sign_index]} {num2}', str(correct_answer)
-
-
-def calc_game():
-    game_engine(calc_answer, INIT_MESSAGE_CALC)
+def generate_round():
+    number1 = randint(MIN_NUMBER, MAX_NUMBER)
+    number2 = randint(MIN_NUMBER, MAX_NUMBER)
+    sign = choice(SIGNS)
+    question = f'{number1} {sign} {number2}'
+    match sign:
+        case '+':
+            correct_answer = str(num1 + num2)
+        case '-':
+            correct_answer = str(num1 - num2)
+        case '*':
+            correct_answer = str(num1 * num2)
+    return question, correct_answer
