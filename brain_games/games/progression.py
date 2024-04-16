@@ -3,25 +3,32 @@ from brain_games.games.engine import game_engine
 
 
 INIT_MESSAGE_PROGRESSION = 'What number is missing in the progression?'
+MIN_FIRST_ELEMENT = 1
+MAX_FIRST_ELEMENT = 100
+MIN_STEP = 1
+MAX_STEP = 10
+MIN_LENGTH = 5
+MAX_LENGTH = 10
 
 
-def progression_answer():
-    START = 1
-    FINISH = 100
-    MIN_LENGTH = 5
-    MAX_LENGTH = 10
-    MIN_STEP = 1
-    MAX_STEP = 10
-    progression = [randint(START, FINISH)]
-    progression_length = randint(MIN_LENGTH, MAX_LENGTH)
-    step = randint(MIN_STEP, MAX_STEP)
-    for i in range(progression_length - 1):
+first_element = randint(MIN_FIRST_ELEMENT, MAX_FIRST_ELEMENT)
+step = randint(MIN_STEP, MAX_STEP)
+length = randint(MIN_LENGTH, MAX_LENGTH)
+missing_item_index = randint(length)
+
+
+def generate_progression(first_element, step, length):
+    progression = [first_element]
+    for i in range(length - 1):
         progression.append(progression[i] + step)
-    missing_item_index = randint(0, progression_length - 1)
+    return progression
+
+
+def generate_progression_question(progression, missing_item_index):
     missing_item = progression[missing_item_index]
     progression[missing_item_index] = '..'
     return ' '.join(map(str, progression)), str(missing_item)
 
 
 def progression_game():
-    game_engine(progression_answer, INIT_MESSAGE_PROGRESSION)
+    game_engine(generate_progression_question, INIT_MESSAGE_PROGRESSION)
