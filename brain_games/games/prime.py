@@ -15,7 +15,7 @@ def is_prime(number):
     return all(number % i != 0 for i in range(3, int(number ** 0.5) + 1, 2))
 
 
-def prime_game():
+def generate_round():
     number = randint(MIN_NUMBER, MAX_NUMBER)
     question = str(number)
     correct_answer = 'yes' if is_prime(number) else 'no'
