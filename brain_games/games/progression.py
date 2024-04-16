@@ -1,5 +1,4 @@
 from random import randint
-from brain_games.games.engine import game_engine
 
 
 INIT_MESSAGE_PROGRESSION = 'What number is missing in the progression?'
@@ -24,17 +23,13 @@ def generate_progression(first_element, step, length):
     return progression
 
 
-def generate_progression_question(progression, missing_item_index):
+def generate_progression_round(progression, missing_item_index):
     progression[missing_item_index] = '..'
-    return ' '.join(map(str, progression))
-
-
-def get_progression_answer():
-    progression = generate_progression(first_element, step, length)
-    correct_answer = progression[missing_item_index]
-    question = generate_progression_question(progression, missing_item_index)
-    return question, correct_answer
+    missing_item = progression[missing_item_index]
+    return ' '.join(map(str, progression)), missing_item
 
 
 def progression_game():
-    game_engine(generate_progression_question, INIT_MESSAGE_PROGRESSION)
+    progression = generate_progression(first_element, step, length)
+    question, correct_answer = generate_progression_round(progression, missing_item_index)
+    return question, correct_answer
