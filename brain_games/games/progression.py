@@ -25,9 +25,15 @@ def generate_progression(first_element, step, length):
 
 
 def generate_progression_question(progression, missing_item_index):
-    missing_item = progression[missing_item_index]
     progression[missing_item_index] = '..'
-    return ' '.join(map(str, progression)), str(missing_item)
+    return ' '.join(map(str, progression))
+
+
+def get_progression_answer():
+    progression = generate_progression(first_element, step, length)
+    correct_answer = progression[missing_item_index]
+    question = generate_progression_question(progression, missing_item_index)
+    return question, correct_answer
 
 
 def progression_game():
