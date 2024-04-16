@@ -1,12 +1,9 @@
 from random import randint
 
 
-INIT_MESSAGE_EVEN = 'Answer "yes" if the number is even, otherwise answer "no".'
+INIT_MESSAGE = 'Answer "yes" if the number is even, otherwise answer "no".'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
-
-
-number = randint(MIN_NUMBER, MAX_NUMBER)
 
 
 def generate_round():
