@@ -20,7 +20,7 @@ def generate_progression(first, step, length):
 def remove_item(progression, removed_item_index):
     removed_item = progression[removed_item_index]
     progression[removed_item_index] = '..'
-    return ' '.join(map(str, progression)), removed_item
+    return ' '.join(map(str, progression)), str(removed_item)
 
 
 def generate_round():
