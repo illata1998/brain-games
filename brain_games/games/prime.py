@@ -1,8 +1,7 @@
 from random import randint
 
 
-INIT_MESSAGE = 'Answer "yes" if given number is prime. '\
-    'Otherwise answer "no".'
+INIT_MESSAGE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 
