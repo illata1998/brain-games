@@ -1,7 +1,7 @@
 from random import randint
 
 
-INIT_MESSAGE_PROGRESSION = 'What number is missing in the progression?'
+INIT_MESSAGE = 'What number is missing in the progression?'
 MIN_FIRST = 1
 MAX_FIRST = 100
 MIN_STEP = 1
@@ -23,7 +23,7 @@ def remove_item(progression, removed_item_index):
     return ' '.join(map(str, progression)), removed_item
 
 
-def progression_game():
+def generate_round():
     first = randint(MIN_FIRST, MAX_FIRST)
     step = randint(MIN_STEP, MAX_STEP)
     length = randint(MIN_LENGTH, MAX_LENGTH)
