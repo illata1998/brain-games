@@ -1,14 +1,14 @@
 import prompt
 
 
-def game_engine(game, init_message):
+def game_engine(game):
     MAX_ATTEMPT_COUNT = 3
     attempt_count = 0
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!\n{init_message}')
+    print(f'Hello, {name}!\n{game.INIT_MESSAGE}')
     while attempt_count < MAX_ATTEMPT_COUNT:
-        question_str, correct_answer = game()
+        question_str, correct_answer = game.generate_round()
         print(f'Question: {question_str}')
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:
