@@ -1,7 +1,7 @@
 from random import randint
 
 
-INIT_MESSAGE = 'What number is missing in the progression?'
+DESCRIPTION = 'What number is missing in the progression?'
 MIN_INITIAL_TERM = 1
 MAX_INITIAL_TERM = 100
 MIN_COMMON_DIFFERENCE = 1
