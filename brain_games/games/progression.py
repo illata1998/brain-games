@@ -30,5 +30,5 @@ def generate_round():
     replaced_item_index = randint(0, length - 1)
     progression = generate_progression(initial_term, common_difference, length)
     question, correct_answer =\
-        convert_progression_into_string(progression,replaced_item_index)
+        convert_progression_into_string(progression, replaced_item_index)
     return question, correct_answer
