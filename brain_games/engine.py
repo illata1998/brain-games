@@ -22,5 +22,5 @@ def run_game(game):
                   f"'{correct_answer}'.")
             print(f"Let's try again, {name}!")
             break
-    if attempt_count == MAX_ATTEMPT_COUNT:
+    if round_count == MAX_ROUND_COUNT:
         print(f'Congratulations, {name}!')
