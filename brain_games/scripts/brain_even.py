@@ -1,7 +1,7 @@
 #!/user/bin/env python3
 
 
-from brain_games.games.engine import game_engine
+from brain_games.engine import game_engine
 import brain_games.games.even as even
 
 
