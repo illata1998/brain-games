@@ -1,7 +1,7 @@
 from random import randint, choice
 
 
-INIT_MESSAGE = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 SIGNS = ['+', '-', '*']
