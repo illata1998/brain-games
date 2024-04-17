@@ -1,7 +1,7 @@
 from random import randint
 
 
-INIT_MESSAGE = 'Find the greatest common divisor of given numbers.'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 
