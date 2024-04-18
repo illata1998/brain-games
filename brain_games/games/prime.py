@@ -10,10 +10,7 @@ def is_prime(number):
         return True
     if number <= 1 or number % 2 == 0:
         return False
-    for i in range(3, int(number ** 0.5) + 1, 2):
-        if number % i == 0:
-            return False
-    return True
+    return not any(number % i == 0 for i in range(3, int(number ** 0.5) + 1, 2))
 
 
 def generate_round():
