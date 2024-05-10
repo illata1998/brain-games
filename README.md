@@ -1,35 +1,39 @@
+# Brain Games
 [![Actions Status](https://github.com/illata1998/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/illata1998/python-project-49/actions) <a href="https://codeclimate.com/github/illata1998/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/04dd65ec4f611f194ba3/maintainability" /></a>
 
 
-### Описание
-**Brain Games** — набор из пяти консольных игр для проверки простых математических навыков игрока. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. 
-
-**Игры:**
-- калькулятор - арифметические выражения, которые необходимо вычислить;
-- прогрессия - поиск пропущенных чисел в последовательности чисел;
-- определение четного числа;
-- определение наибольшего общего делителя;
-- определение простого числа.
-
-
-### Установка
-Для установки на **Linux** используйте команду <code>python3 -m pip install --user git+https://github.com/illata1998/python-project-49.git</code>. Требуется pip версии 20 и выше.
-
+## Description
+**Brain Games** is a set of five console math games.
+## Installation
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Brain Games.
+```bash
+python3 -m pip install --user git+https://github.com/illata1998/python-project-49.git
+```
 <a href="https://asciinema.org/a/HPCHDRAJUjbN9PDdMcDAPfsd6" target="_blank"><img src="https://asciinema.org/a/HPCHDRAJUjbN9PDdMcDAPfsd6.svg" /></a>
+## Usage
+```bash
+#calculate simple arithmetic expressions
+brain-calc
 
+#find the missing number in an arithmetic progression
+brain-progression
 
-### Запуск
-Для запуска игр после установки используйте следующие команды:
-- калькулятор - <code>brain-calc</code>;
-- прогрессия - <code>brain-progression</code>;
-- определение четного числа - <code>brain-even</code>;
-- определение наибольшего общего делителя - <code>brain-gcd</code>;
-- определение простого числа - <code>brain-prime</code>.
+#identify even numbers
+brain-even
 
-**Примеры запуска игр**
+#find the greatest common divisor
+brain-gcd
 
+#identify prime numbers
+brain-prime
+```
+### Example 1: brain-calc
 <a href="https://asciinema.org/a/DMUoCbSZKTTGccsm2B970LRzJ" target="_blank"><img src="https://asciinema.org/a/DMUoCbSZKTTGccsm2B970LRzJ.svg" /></a>
+### Example 2: brain-progression
 <a href="https://asciinema.org/a/McF94c3TbIZodrsmhsiEW8OLB" target="_blank"><img src="https://asciinema.org/a/McF94c3TbIZodrsmhsiEW8OLB.svg" /></a>
+### Example 3: brain-even
 <a href="https://asciinema.org/a/m6OU4XnUVHc0ReyZQtleYur0h" target="_blank"><img src="https://asciinema.org/a/m6OU4XnUVHc0ReyZQtleYur0h.svg" /></a>
+### Example 4: brain-gcd
 <a href="https://asciinema.org/a/RkjblzE6XGVCwXCQHPJYpYPs9" target="_blank"><img src="https://asciinema.org/a/RkjblzE6XGVCwXCQHPJYpYPs9.svg" /></a>
+### Example 5: brain-prime
 <a href="https://asciinema.org/a/wheBBRR7krmidreiNVBgF0o6T" target="_blank"><img src="https://asciinema.org/a/wheBBRR7krmidreiNVBgF0o6T.svg" /></a>
