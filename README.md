@@ -7,7 +7,7 @@
 ## Installation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Brain Games.
 ```bash
-python3 -m pip install --user git+https://github.com/illata1998/python-project-49.git
+python3 -m pip install --user git+https://github.com/illata1998/brain-games.git
 ```
 <a href="https://asciinema.org/a/HPCHDRAJUjbN9PDdMcDAPfsd6" target="_blank"><img src="https://asciinema.org/a/HPCHDRAJUjbN9PDdMcDAPfsd6.svg" /></a>
 ## Usage
